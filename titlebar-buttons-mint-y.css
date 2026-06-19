@@ -1,0 +1,113 @@
+/* Readjusting the position of the default buttons */
+#browser .window-buttongroup {
+    margin-top: 0.45rem;
+    margin-right: 0.2rem;
+    gap: 0.47rem;      
+}
+#browser .tabless .window-buttongroup,
+#browser.is-settingspage .window-buttongroup {
+    margin-top: 0rem;
+    margin-right: 0.2rem;
+    gap: 0.47rem;      
+}
+
+/* Button's background circle */
+#browser .window-buttongroup button {
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+}
+
+/* 
+The window control buttons for Mint-Y were found: 
+/usr/share/icons/Mint-Y/actions/symbolic 
+/usr/share/icons/Adwaita/scalable/ui (Close Button)
+*/
+
+/* Minimize Button */
+.window-minimize svg {
+    overflow: visible;
+}
+.window-minimize svg path {
+    d: path("M4 10v1h8v-1z");
+    transform: translate(-5px, -3px);
+}
+button.window-minimize {
+    background-color: transparent !important;
+}
+button.window-minimize:hover {
+    background-color: rgba(0, 0, 0, 0.1) !important;
+}
+button.window-minimize:active {
+    background-color: rgba(0, 0, 0, 0.2) !important;
+}
+/* When window is not active */
+#browser.isblurred.dim-blurred .window-minimize svg path {
+    color: #a8a8a8;
+}
+
+/* Restore Button */
+.window-maximize svg g.window-restore-glyph path:nth-child(2) {
+    d: path("m 3,5 v 8 h 8 V 5 Z m 1,1 h 6 v 6 H 4 Z");
+    transform: translate(-5px, -3px);
+}
+.window-maximize svg g.window-restore-glyph path:nth-child(1) {
+    d: path("m 5,3 v 1 h 7 v 7 h 1 V 3 Z");
+    opacity: 0.5;
+    transform: translate(-5px, -3px);
+}
+/* When window is not active */
+#browser.isblurred.dim-blurred .window-maximize svg g.window-restore-glyph path:nth-child(2) {
+    color: #a8a8a8;
+}
+#browser.isblurred.dim-blurred .window-maximize svg g.window-restore-glyph path:nth-child(1) {
+    color: #a8a8a8;
+}
+
+/* Maximize Button */
+.window-maximize svg {
+    overflow: visible
+}
+.window-maximize svg g.window-maximize-glyph path {
+    d: path("M4 4v8h8V4zm1 1h6v6H5z");
+    transform: translate(-5px, -3px);
+}
+button.window-maximize {
+    background-color: transparent !important;
+}
+button.window-maximize:hover {
+    background-color: rgba(0, 0, 0, 0.1) !important;
+}
+button.window-maximize:active {
+    background-color: rgba(0, 0, 0, 0.2) !important;
+}
+/* When window is not active */
+#browser.isblurred.dim-blurred .window-maximize svg g.window-maximize-glyph path {
+    color: #a8a8a8;
+}
+
+/* Close Button */
+.window-close svg {
+    overflow: visible;
+}
+.window-close svg path {
+    d: path("M4.795 3.912l-.883.883.147.146L7.117 8 4.06 11.059l-.147.146.883.883.146-.147L8 8.883l3.059 3.058.146.147.883-.883-.147-.146L8.883 8l3.058-3.059.147-.146-.883-.883-.146.147L8 7.117 4.941 4.06z");
+    transform: translate(-5px, -3px);
+    fill: white;
+}
+button.window-close {
+    background-color: #0099dd !important;
+}
+button.window-close:hover {
+    background-color: #00a4e2 !important;
+}
+button.window-close:active {
+    background-color: #0089c7 !important;
+}
+/* When window is not active */
+#browser.isblurred.dim-blurred button.window-close {
+    background-color: #a8a8a8 !important;
+}
+#browser.isblurred.dim-blurred button.window-close:hover {
+    background-color: #00a4e2 !important;
+}
