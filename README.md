@@ -4,7 +4,7 @@ This is just a repo containing the CSS files that I use to match Vivaldi's defau
 
 I initially posted about it in Vivaldi Forums but since I recently corrected issues with it, I just decided to put everything into this GitHub's repo and update it.
 
-This CSS is just intended to replace the default window control buttons of Vivaldi in Linux for the ones that Mint-Y uses (that's why it is called "Super Simple"). Although there are other CSS files, they are just tiny tweaks that I added that I think are a good fit, but not necessary for the window control buttons to be replaced.
+This CSS is just intended to replace the default window control buttons of Vivaldi in Linux for the ones that Mint-Y uses (that's why it is called "Super Simple"). Although there are other CSS files, they are just tiny tweaks that I added that I think are a good fit, but not necessary for the window control buttons to be replaced. For more info on how to modify Vivaldi's UI, take a look at: https://vivaldi.com/blog/tips/tip-9/
 
 ## How does it look like?
 
@@ -13,7 +13,7 @@ Here's a comparison:
 |       |Maximized                   |Not Maximized                   |
 |-------|----------------------------|--------------------------------|
 |Default|![default-vivaldi-maximized]|![default-vivaldi-not-maximized]|
-|Custom |![custom-mint-y-maximized]  |![custom-mint-y-not-maximized]  |
+|Custom CSS |![custom-mint-y-maximized]  |![custom-mint-y-not-maximized]  |
 
 [custom-mint-y-maximized]: https://github.com/octo-catto/super-simple-mint-y-vivaldi-css/blob/main/sample_screenshots/custom-mint-y-maximized.png
 [custom-mint-y-not-maximized]: https://github.com/octo-catto/super-simple-mint-y-vivaldi-css/blob/main/sample_screenshots/custom-mint-y-not-maximized.png
@@ -28,6 +28,6 @@ The background color of the close button can easily be changed in case you use M
 
 ## Which CSS file should I download then?
 
-* ```lm-mint-y-window-control-buttons.css```
+* ```window-buttongroup-mint-y.css```
 * The other CSS files are completely optional.
 
